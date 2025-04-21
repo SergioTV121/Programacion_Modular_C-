@@ -1,0 +1,62 @@
+﻿using System;
+
+
+namespace Segundo
+{
+	
+    class Program
+    {
+    	
+        public static void Main(string[] args)
+        { 
+Console.Title="Sergio Tinoco";
+
+
+
+
+
+
+const int t=5;
+float nota,cont=1,may6=0,men6=0,mayor=0,menor=10;
+
+
+        	
+{
+
+
+      for(cont=1;cont<=t;cont++)
+      {
+      
+      
+      Console.WriteLine(" Ingrese Nota {0} ",cont);
+      nota=float.Parse(Console.ReadLine());
+      
+      if(nota>=6)
+      	
+      	may6++;
+      else 
+      	if(nota<6&&nota>=0)
+      		men6++;
+      
+      if(nota>mayor)
+      	mayor=nota;
+ 
+      if(nota<menor)
+      	menor=nota;
+      
+    
+      }
+      
+      
+      Console.WriteLine(" Las Notas Aprobatorias Fueron {0} \n y las reprobatorias fueron {1}",may6,men6);
+      
+            Console.WriteLine(" La Nota Mayor Fue {0} \n y la nota menor fue {1}",mayor,menor);
+
+            Console.ReadKey();
+
+        }
+
+    }
+
+}
+}
